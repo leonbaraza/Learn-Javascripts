@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- function declaration and function expression -->
+    <script>
+
+        /*
+            FUNCTION DECLARATION
+            1. Has a key word function
+            2. Has a function name
+            3. has optional parameters
+            4. Must have a block to be executed inside parenthesis
+            5. Has an optional return statement.
+
+
+            Syntax:
+            function <function name(optional parameters)>{
+                block to be executed
+            }
+
+
+            FUNCTION EXPRESSION
+            It means assigning a function to a variable name
+            It must end with a semi colon
+            Syntax:
+                let add = function <function name(optional parameters)>{
+                            block to be executed
+                        };
+
+            For a function declaration You can call it before declaring it 
+            but for expression You must define it before calling it
+            
+            ARROW FUNCTION
+            
+            Syntax:
+            let name = (<optional par>) => block;
+
+
+        */
+        function ask(question, yes, no){
+            if(confirm(question)){
+                yes();
+            }else{
+                no();
+            }
+        }
+        function sayOk(){
+            console.log('You said ok');
+        }
+        function showCancel(){
+            console.log('You cancelled');
+        }
+       
+
+        // ask('I am male?', sayOk, showCancel);
+
+
+        // let sayHi = function hi(){
+        //     console.log('hi');
+        // };
+        // // hi();
+        // console.log(sayHi());
+
+
+
+        //Function Expression
+        // console.log(name('Leon'));
+
+        let name = function myName(n){
+            return `My name is ` +n;
+        };
+
+        // console.log(country);
+        // let country = 'Kenya';
+
+        // console.log(myName('Leon'));
+
+        function myName(n){
+            return `My name is ${{n}}`;
+        };
+        
+        console.log(name('Leon'));
+        // console.log(name);
+
+
+        // EXAMPLE
+        let age = prompt("How old are You?");
+
+        let message;
+        if (age < 18){
+            message = function(){
+                return `You re under age! Enda shule usome`;
+            };
+        }else{
+            message = function(){
+                return `Party after party`;
+            };
+        }
+
+        // console.log(message());
+        
+
+        //ARROW FUNCTIONS
+        //Add two numbers
+
+        // function sum(a,b){
+        //     return a+b;
+        // }
+
+        // console.log(sum(1,2));
+
+        let sum = (a , b) => {a + b};
+        console.log(sum(10,45));
+        
+        let num = n =>{
+            if(n%2 == 0)return n + ` is even`;
+            else return n + ` is odd`;
+        };
+        let nums = prompt('Enter a number to be checked.');
+        console.log(num(nums));
+
+        // Reverse
+        let char = letters => letters.split('').reverse().join('');
+        let l = prompt('Enter a letters to be reversed.');
+        console.log(char(l));
+
+
+    </script>
+</body>
+</html>

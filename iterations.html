@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  While, do while and for loops  -->
+
+    <script>
+        /*
+        Iteration is basically looping through a sequence
+        
+        Javascript - While, do while and for
+
+        ----while----
+        while checks a condition and executes a block of code if the condition is true.
+        Syntax :
+            while(condition){
+                block of code
+            }
+        
+            break means get out of the loop
+        
+        --do while--
+        Executes a code, then checks if the condition is true then continues 
+        executing until it is false.
+        Syntax:
+        do:
+            ececute code
+        while(condition);
+
+
+        --for loop--
+        
+        Same as while but differs in syntax.
+        Syntax: 
+        for(begin, condition, step){
+            block of code
+        }
+
+
+        */
+
+        while(true){
+            console.log('Leon');
+            break;
+        }
+        console.log('end');
+
+        //print numbers from 1 to 10
+        let x = 0;
+        while(x<=9){
+            console.log(++x);
+        }
+
+
+
+        // pin
+        // let correct_pin = 1234;
+
+        //  let counter = 1;
+
+        //  while(counter<=3){
+        //     let pin = prompt("Enter your pin");
+            
+        //     if(pin === correct_pin){
+        //         console.log('Correct pin. You have logged in success!');
+        //         break;
+        //     }else{
+        //         console.log('Incorrect pin!');
+        //         counter++;
+        //     }
+        //  }
+
+        //  assignment
+        // Request for an email and password from a user and 
+        // check if its correct. Limit the numbers of trials to 5
+
+        //  do wjile
+        let n = 1;
+        console.log('new');
+        do{
+            console.log(n);
+            n++;
+        }while(n<=10);
+
+
+        // for loop
+
+        for(let w = 1; w<=10; w++){
+            console.log(w, 'for');
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Arrays in Javascript -->
+    <script>
+        /*
+        Array - Datatype where you can store a range of values in it at once.
+        Example:
+        let arr = [1,2,3,4]
+
+        indexOf - finds the index of a specific value in an array
+        splice - used to add or delete an value in a specific index
+
+
+        */
+
+        //Array declaration
+        let arr = [];
+        let ar = new Array();
+
+        let names = ['Tech', 'Camp', 'Kenya', 'Web', 'Dev'];
+
+        console.log(names[0]);
+        
+        console.log(names[4]);
+        console.log(names[names.length - 1]);
+
+        // adding an element in an array
+        names.push('Node Js');
+        console.log(names);
+
+        // remove  use splice
+        // slice(startIndex, noOfElements, values)
+
+        names.pop();
+        names.pop();
+        console.log(names);
+
+        names.splice(2,'Leon', 'Morgan');
+        // names.splice(0,1)
+        console.log(names);
+
+        console.log(names.indexOf('Camp'));
+
+        // declaring using the second method
+        let n = new Array('a','b');
+        console.log(n);
+
+
+        console.log(names);
+
+        // Truncate
+        names.length = 2;
+        console.log(names);
+
+        let nam = ['Tech', 'Camp', 'Kenya', 'Web', 'Dev'];
+
+        console.log(nam, "[2][3]");
+
+    </script>
+</body>
+</html>

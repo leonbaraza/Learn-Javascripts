@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- FORMS, CONTROL -->
+    <form action="" name="form">
+        <input type="text" placeholder="Enter your name"  id='name' value="Leon">
+        <input type="email" placeholder="Enter your email" id='email' value="tech">
+        <input type="password" placeholder="Enter your password" id='password' value="pass">
+        <input type="button" value="Button" onclick="output();">
+    </form>
+
+    <div id="display">
+
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur atque eius reprehenderit ipsum ut harum tempore odio dolor itaque. Quasi, neque molestias. Magni a perspiciatis harum non adipisci? Perferendis, culpa?</p>
+    <button>Red</button>
+    <button>blue</button>
+    <button>yellow</button>
+    <button>green</button>
+    <button>purple</button>
+    <script>
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        // console.log(name);
+        // console.log(email);
+        // console.log(password);
+
+        function output(){
+            console.log(name);
+            console.log(email);
+            console.log(password);
+
+            document.getElementById('display').innerHTML= name +' ' +email +' ' + password;
+
+        }
+
+    </script>
+
+</body>
+</html>

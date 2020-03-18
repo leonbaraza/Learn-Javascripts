@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Objects in JS -->
+    <script>
+        /*
+        example
+        let person = {
+            name:'Morgan',
+            color:'dark',
+            age:'30',
+        };
+
+
+        */
+
+        // Ways of declaring an object
+        let obj = {};
+        let ob = new Object();
+
+        let person = {
+            name:'Morgan',
+            color:'dark',
+            age:30,
+        };
+
+        console.log(person.name);
+        console.log(person.color);
+        console.log(person.age);
+
+        person.height = 6.2;
+        
+        
+        // or
+
+        let h = {height : 6.2};
+        let c = Object.assign(person,h);
+        console.log(c);
+        
+        console.log(Object.keys(person));
+        // console.log(Object.bind());
+
+        // delete
+        delete(person.height);
+        delete(person.age);
+        console.log(person);
+
+        // Update
+        person.name = 'Leon';
+        console.log(person);
+
+        console.log(Object.keys(person));
+        
+        
+        let animals = [
+            {
+            name:'Morgan',
+            color:'dark',
+            age:30,
+        },
+        {
+            name:'Leon',
+            color:'dark',
+            yob:2000,
+        },
+        'techcamp',
+        [1,2,{country : 'Kenya', corona: 'free'},4,5],
+        ];
+
+        //output 5
+        console.log(animals[3][4]);
+
+        //find keys of the second element
+        console.log(Object.keys(animals[1]));
+
+        //Output Free
+
+
+
+
+        let taskList = [23, 'Jane', ['Lesson 23', 560, {'currency' : 'KES'}], 987, [76,'John']];
+        console.log(taskList);
+        console.log(typeof(taskList));
+
+
+    </script>
+</body>
+</html>

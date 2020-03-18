@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- variables in Javascript -->
+
+    <script>
+        /*
+        -----Key points to note-----
+
+        What is a variable?
+        Stored memory location.
+
+        EXAMPLE OF VARIABLE:
+        - var <name of variable> or
+        - let <name of variable> or
+        - const <name of variable>
+
+            let a = 1; or const b = 1; or var c =1;
+
+            DIFFERENCE BETWEEN VAR, LET  AND CONST
+
+            - var and let does the same but let is the new version of var.
+            - using let, you cannot redeclare a variable once assigned
+            - const works the same way as var and let but const is used 
+            to declare values that will never change
+
+
+            RULES OF VARIABLE NAMING
+            1. Should not contain spaces
+                use camel case(techCamp) or snake case(tech_camp)
+            2. Should not be a key word in javascript
+             example (let var = 1;)
+
+            3. Should not begin with a number but can have numbers
+            eg let 1nub = 1;
+            
+            4. Should contain only letters, digits, or the symbols & and _
+
+        */
+        // const a = 2;
+        // const b = 10;
+        // const c = 30;
+        const a = 2 , b = 10, c = 30;
+        console.log('c = ', c);
+
+        // reassignment or redefine
+        // const c = 99;
+        // console.log('c = ', c);
+        
+        const x = a + b + c;
+
+        console.log(x);
+
+        // Number
+        const e = 1; //number
+        const f = 'tech camp'; // string
+        const bol = true; //boolean (true or false)
+        
+        const z = null //defines a null value
+        let y = undefined 
+        
+        y = 'leon';
+        console.log(y);
+
+        const fname = 'Leon', lname = 'Wakoli', dob ='2020-10-10', pos = 'Ruaka';
+
+        console.log(`My name is ${fname} ${lname}. I was born in ${dob}. And i stay at ${pos}.`)
+        console.log('My name is',fname , lname, 'and i was born in ', dob, 'and i stay in ', pos)
+    </script>
+</body>
+</html>
